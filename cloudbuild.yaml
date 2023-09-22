@@ -1,4 +1,5 @@
 steps:
  - name: 'ubuntu'
-   args: [ 'echo', 'test']
-
+   args: [ 'echo', "$_TEST_VAR"]
+substitutions:
+  _TEST_VAR: "TEST2"
